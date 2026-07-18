@@ -1,0 +1,126 @@
+.billing-live-box {
+  background: var(--pms-surface-alt);
+  border: 1px solid var(--pms-border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+}
+
+.billing-live-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.billing-live-header i { color: var(--pms-warning); margin-right: 6px; }
+
+.billing-live-btn {
+  font-size: 0.8rem;
+  padding: 7px 14px;
+}
+
+.billing-live-result {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--pms-border);
+}
+
+.billing-live-total {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.billing-live-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.billing-live-chip {
+  background: var(--pms-surface);
+  border: 1px solid var(--pms-border);
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.76rem;
+  color: var(--pms-text-muted);
+}
+
+.billing-live-note {
+  font-size: 0.75rem;
+  color: var(--pms-text-muted);
+  margin: 0;
+}
+
+.billing-form { margin-bottom: 20px; }
+
+.billing-form-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr) auto;
+  gap: 10px;
+  align-items: stretch;
+}
+
+.billing-form-grid input.is-invalid {
+  border-color: var(--pms-danger);
+}
+
+.billing-form-grid button {
+  white-space: nowrap;
+}
+
+.billing-loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--pms-text-muted);
+  padding: 24px 0;
+  justify-content: center;
+  font-size: 0.85rem;
+}
+
+.billing-table-wrap {
+  overflow-x: auto;
+  max-height: 320px;
+}
+
+.billing-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.billing-table th {
+  text-align: left;
+  font-size: 0.75rem;
+  color: var(--pms-text-muted);
+  font-weight: 600;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--pms-border);
+  position: sticky;
+  top: 0;
+  background: var(--pms-surface);
+}
+
+.billing-table td {
+  padding: 10px;
+  border-bottom: 1px solid var(--pms-border);
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.billing-table tr:last-child td { border-bottom: none; }
+
+@media (max-width: 700px) {
+  .billing-form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .billing-form-grid button {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+}

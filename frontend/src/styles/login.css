@@ -1,0 +1,61 @@
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, var(--pms-login-bg-start) 0%, var(--pms-login-bg-end) 60%);
+  padding: 20px;
+}
+
+.login-card {
+  background: var(--pms-surface);
+  border: 1px solid var(--pms-border);
+  border-radius: 14px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: var(--pms-shadow);
+  animation: pmsSlideUp 0.4s ease-out;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.login-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--pms-primary), #7aa8ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 auto 16px;
+}
+
+.login-header h2 {
+  margin: 0 0 6px;
+  font-size: 1.3rem;
+}
+
+.login-header p {
+  margin: 0;
+  color: var(--pms-text-muted);
+  font-size: 0.85rem;
+}
+
+.login-error {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.login-submit {
+  width: 100%;
+  justify-content: center;
+  padding: 12px;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}

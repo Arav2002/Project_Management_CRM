@@ -1,0 +1,89 @@
+.awsacc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.awsacc-header h2 { margin: 0 0 4px; font-size: 1.6rem; }
+.awsacc-subtitle { margin: 0; color: var(--pms-text-muted); font-size: 0.9rem; }
+
+.awsacc-loading {
+  display: flex; align-items: center; gap: 10px;
+  color: var(--pms-text-muted); padding: 40px 0; justify-content: center;
+}
+
+.awsacc-empty {
+  text-align: center;
+  padding: 50px 20px;
+  color: var(--pms-text-muted);
+}
+.awsacc-empty i { font-size: 1.8rem; margin-bottom: 10px; display: block; }
+
+.awsacc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+}
+
+.awsacc-card { padding: 20px; }
+
+.awsacc-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.awsacc-icon {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  background: rgba(240,180,41,0.15);
+  color: var(--pms-warning);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+}
+
+.awsacc-card-actions { display: flex; gap: 6px; }
+
+.awsacc-name { font-weight: 700; font-size: 1.05rem; margin-bottom: 2px; }
+.awsacc-label { font-size: 0.82rem; color: var(--pms-text-muted); margin-bottom: 10px; }
+
+.awsacc-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+
+.awsacc-test-btn {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+  padding: 8px;
+}
+
+.awsacc-verified {
+  font-size: 0.72rem;
+  color: var(--pms-text-muted);
+  margin-bottom: 8px;
+}
+
+.awsacc-stats {
+  display: flex;
+  gap: 24px;
+  margin: 16px 0;
+  padding: 14px 0;
+  border-top: 1px solid var(--pms-border);
+  border-bottom: 1px solid var(--pms-border);
+}
+.awsacc-stat-value { font-weight: 700; font-size: 1.05rem; }
+.awsacc-stat-label { font-size: 0.75rem; color: var(--pms-text-muted); }
+
+.awsacc-view-btn {
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  .awsacc-header { align-items: stretch; }
+  .awsacc-header .pms-btn-primary { width: 100%; justify-content: center; }
+  .awsacc-grid { grid-template-columns: 1fr; }
+}

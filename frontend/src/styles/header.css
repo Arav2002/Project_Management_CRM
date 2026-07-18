@@ -1,0 +1,95 @@
+.pms-header {
+  height: 64px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: var(--pms-surface);
+  border-bottom: 1px solid var(--pms-border);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.pms-header-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.pms-header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pms-header-icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--pms-surface-alt);
+  border: 1px solid var(--pms-border);
+  color: var(--pms-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+}
+.pms-header-icon-btn:hover { background: var(--pms-border); color: var(--pms-text); }
+.pms-header-icon-btn i { font-size: 0.95rem; }
+.pms-header-icon-btn.pms-header-logout-btn:hover { background: var(--pms-danger-bg); color: var(--pms-danger); }
+
+.pms-header-divider {
+  width: 1px;
+  height: 26px;
+  background: var(--pms-border);
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.pms-header-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 5px;
+  border-radius: 8px;
+  background: var(--pms-surface-alt);
+  border: 1px solid var(--pms-border);
+}
+
+.pms-header-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--pms-primary), #7aa8ff);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pms-header-email {
+  font-size: 0.82rem;
+  color: var(--pms-text);
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .pms-header { padding: 0 16px; }
+  .pms-header-email { display: none; }
+  .pms-header-profile { padding: 5px; }
+  .pms-header-title { font-size: 1rem; }
+}
+
+@media (max-width: 420px) {
+  .pms-header-divider { display: none; }
+  .pms-header-right { gap: 6px; }
+}
