@@ -1,4 +1,4 @@
-# Project Management Suite (Standalone)
+# Project Management CRM
 
 A fully independent React + Node + Postgres app for managing multiple AWS
 accounts and the projects deployed under them — real EC2 start/stop, real
